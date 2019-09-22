@@ -19,7 +19,10 @@
         <p
           class="card-text"
         >{{ card_newsletter_data.description }}</p>
-        <a href class="btn-block btn-sponsorship"><i class="far fa-envelope"></i> SUSCRIBE</a>
+        <a class="btn-block btn-sponsorship">
+            <i class="far fa-envelope">
+            </i> SUSCRIBE
+        </a>
       </div>
     </div>
 </template>
