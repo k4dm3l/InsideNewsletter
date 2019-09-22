@@ -1,7 +1,7 @@
 <template>
   <div
     class="modal fade"
-    id="newsletterVoteModal"
+    id="newsletterModal"
     tabindex="-1"
     role="dialog"
     aria-labelledby="exampleModalLabel"
@@ -16,16 +16,12 @@
         </div>
         <div>
           <div class="card promoting-card p-2">
-            <h3 class="modal-title mb-2" id="exampleModalLabel"><b>{{ vote_newsletter_subs_data.title }}</b></h3>
-            <img
-              :src="vote_newsletter_subs_data.image"
-              class="rounded-circle m-auto"
-              height="150px"
-              width="150px"
-              alt="avatar"
-            />
+            <h3 class="modal-title mb-2" id="exampleModalLabel">
+              <b>{{ newsletter_subs_data.title }}</b>
+            </h3>
+            <img :src="newsletter_subs_data.image" class="rounded-circle m-auto" height="150px" width="150px" alt="avatar" />
             <div class="container form-group mt-3">
-              <input type="email" class="form-control" placeholder="Enter your email"/>
+              <input type="email" class="form-control" placeholder="Enter your email" />
               <button type="submit" class="btn btn-sponsorship mt-2 btn-block">Subscribe</button>
             </div>
           </div>
@@ -36,7 +32,7 @@
 </template>
 <script>
 export default {
-    props: ['vote_newsletter_subs_data']
+  props: ["newsletter_subs_data"]
 };
 </script>
 <style scoped>

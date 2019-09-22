@@ -10,6 +10,7 @@
         <div class="row m-5">
           <div class="col-4" v-for="newsletter in newsletters" :key="newsletter.id">
             <CardNewsletter :card_newsletter_data="newsletter" />
+            <ModalNewsletter :newsletter_subs_data="newsletter" />
           </div>
         </div>
       </div>
@@ -27,7 +28,7 @@
         <div class="row m-5">
           <div class="col-4" v-for="next_newsletter in potential_newsletters" :key="next_newsletter.id">
             <CardNextNewsletter :card_next_newsletter_data="next_newsletter" />
-            <VoteModalNewsletter :newsletter_subs_data="next_newsletter" />
+            <VoteModalNewsletter :vote_newsletter_subs_data="next_newsletter" />
           </div>
         </div>
       </div>
@@ -40,7 +41,8 @@
 import Header from "@/components/Header.vue";
 import CardNewsletter from "@/components/CardNewsletter.vue";
 import CardNextNewsletter from "@/components/CardNextNewsletter.vue";
-import VoteModalNewsletter from "@/components/VoteModalNewsletter.vue"
+import VoteModalNewsletter from "@/components/VoteModalNewsletter.vue";
+import ModalNewsletter from "@/components/ModalNewsletter.vue";
 
 import axios from "axios";
 
@@ -50,7 +52,8 @@ export default {
     Header,
     CardNewsletter,
     CardNextNewsletter,
-    VoteModalNewsletter
+    VoteModalNewsletter,
+    ModalNewsletter
   },
   data() {
     return {
