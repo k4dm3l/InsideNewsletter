@@ -19,7 +19,7 @@
         <p
           class="card-text"
         >{{ card_newsletter_data.description }}</p>
-        <a href class="btn-block btn-sponsorship">SUSCRIBE</a>
+        <a href class="btn-block btn-sponsorship"><i class="far fa-envelope"></i> SUSCRIBE</a>
       </div>
     </div>
 </template>
@@ -60,5 +60,11 @@ export default {
     padding: 0.5em;
     margin-left: -75px;
     position: absolute;
+}
+
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 </style>

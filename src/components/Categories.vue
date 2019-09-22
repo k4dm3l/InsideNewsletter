@@ -43,6 +43,7 @@
         background: #ff5c03;
         box-shadow: 0 4px 2px -2px gray;        
     }
+
     .categorie-list li {
         display: inline;
         margin: 1.3em;
@@ -54,7 +55,7 @@
     }
 
     li a:hover {
-        color: #fff;
+        color: #000;
         transition: 0.5s;
     }
 </style>
