@@ -1,7 +1,7 @@
 <template>
   <div class="container-categories container-fluid d-flex p-3">
     <ul class="categorie-list align-self-start" v-for="(tag, index) in tags" :key="tag.id">
-      <li v-if="index == 0">
+      <li v-if="index == 0 && index <= 8">
           <a href="/">All</a>
       </li>
       <li v-else>

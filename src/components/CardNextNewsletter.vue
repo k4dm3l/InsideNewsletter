@@ -20,7 +20,7 @@
         <!--
       <h3>Test</h3>
       <p class="card-text">TEST THIS IS A TEST</p>-->
-      <a class="btn-block btn-sponsorship" data-toggle="modal" data-target="#newsletterVoteModal">
+      <a class="btn-block btn-sponsorship" data-toggle="modal" :data-target="'#newsletterVoteModal'+card_next_newsletter_data.id">
         <i class="far fa-envelope"></i> VOTE
       </a>
       <div class="container mt-3">

@@ -1,7 +1,7 @@
 <template>
   <div
     class="modal fade"
-    id="newsletterVoteModal"
+    :id="'newsletterVoteModal'+vote_newsletter_subs_data.id"
     tabindex="-1"
     role="dialog"
     aria-labelledby="exampleModalLabel"

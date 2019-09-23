@@ -19,7 +19,7 @@
         <p
           class="card-text"
         >{{ card_newsletter_data.description }}</p>
-        <a class="btn-block btn-sponsorship" data-toggle="modal" data-target="#newsletterModal">
+        <a class="btn-block btn-sponsorship" data-toggle="modal" :data-target="'#newsletter'+card_newsletter_data.id">
             <i class="far fa-envelope">
             </i> SUSCRIBE
         </a>
